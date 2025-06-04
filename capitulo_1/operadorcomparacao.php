@@ -1,7 +1,8 @@
 <?php
-$name='Rosa';
-$name='ângela';
-$price=50.55;
+$item='Chocolate';
+$stock=8;
+$wanted=5;
+$can_buy=($wanted<=$stock);
 
 
 
@@ -15,8 +16,11 @@ $price=50.55;
 </head>
 <body>
     <h1>The Candy Store</h1>
-    <h2>Bem-vinda <?=$name?></h2>
-    <p>O valor do seu doce é R$ <?php echo $price;?></p>
+    <h2>Carrinho</h2>
+    <p>Item:<?=$item?></p>
+    <p>Estoque:<?=$stock?></p>
+    <p>Quer:<?=$wanted?></p>
+    <p>Posso comprar?<?=$can_buy?></p>
     
 </body>
 </html>
