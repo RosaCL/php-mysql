@@ -1,7 +1,8 @@
 <?php
-$name='Rosa';
-$name='ângela';
-$price=50.55;
+$prefix='Obrigada';
+$name='Ângela';
+$message=$prefix . ', ' . $name;
+//$message="$prefix $name";
 
 
 
@@ -15,8 +16,8 @@ $price=50.55;
 </head>
 <body>
     <h1>The Candy Store</h1>
-    <h2>Bem-vinda <?=$name?></h2>
-    <p>O valor do seu doce é R$ <?php echo $price;?></p>
+    <h2>Pedido <?=$name?></h2>
+    <p><?=$message?></p>
     
 </body>
 </html>

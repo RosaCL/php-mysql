@@ -1,8 +1,11 @@
 <?php
-$name='Rosa';
-$name='ângela';
-$price=50.55;
 
+$menber = [
+    'nome'=>'Rosa',
+    'age'=> 39,
+    'country'=>'Brasil',
+    'state'=>'Alagoas'
+];
 
 
 ?>
@@ -15,8 +18,7 @@ $price=50.55;
 </head>
 <body>
     <h1>The Candy Store</h1>
-    <h2>Bem-vinda <?=$name?></h2>
-    <p>O valor do seu doce é R$ <?php echo $price;?></p>
+    <h2>Bem-vinda <?php echo $menber['nome'];?>, a nossa loja do <?=$menber['country']?></h2>
     
 </body>
 </html>
