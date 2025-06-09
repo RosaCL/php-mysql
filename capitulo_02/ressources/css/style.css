@@ -54,3 +54,20 @@ section{
     padding: 1rem;
     border: black;
 }
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background: #500e50de;
+}
+header nav a{
+    font-size: 2rem;    
+    color: #fff;
+    padding: 0 1.5rem;
+}
