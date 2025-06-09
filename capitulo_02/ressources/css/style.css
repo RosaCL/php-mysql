@@ -31,3 +31,26 @@ section{
 .hero p{
     font-size: 2rem;
 }
+.hero table {
+    margin: 1rem 0;
+    padding: 1.4rem;
+    border-radius: .5rem;
+    border: #fff;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+.hero table tr th{
+    color: black;
+    width: fit-content;
+    margin: 1rem;
+    padding: 1rem;
+    border: black;
+}
+.hero table tr td{
+    color: black;
+    width: fit-content;
+    margin: 1rem;
+    padding: 1rem;
+    border: black;
+}

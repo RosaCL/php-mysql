@@ -1,10 +1,7 @@
 <?php
-$day = 'Terça';
-$offer = match($day){
-    'Segunda' => '20% de desconto no chocolate',
-    'Sábado', 'Domingo' => '20% de desconto no caramelo',
-    default => '10% de desconto no pedido'
-}
+$i = 1;
+$packs = 10;
+$price =1.99;
 
 
 ?>
@@ -20,8 +17,18 @@ $offer = match($day){
 <body>
     <section class="hero" id="hero">
         <h1>The Candy Store</h1>
-        <h2>Ofertas da <?=$day?></h2>
-        <h2><?=$offer?></h2>        
+        <h2>Ofertas da dia</h2>
+        <p>
+            <?php
+            while ($i < $packs){
+                echo $i;
+                echo ' - pacote custa R$';
+                echo $price * $i;
+                echo '<br>';
+                $i++;
+            }
+            ?>
+        </p>       
     </section>
     
 </body>
