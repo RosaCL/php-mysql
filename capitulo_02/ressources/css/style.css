@@ -17,6 +17,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .hero h1{
     font-family: "Emilys Candy", serif;
