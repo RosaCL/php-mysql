@@ -17,6 +17,7 @@ $offers=[
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <?php require 'includes/header.php';?>
     <section class="hero" id="hero">
 
         <h1>The Candy Store</h1>
@@ -26,6 +27,7 @@ $offers=[
         <p><?php echo $offers[2]['poduct'];?> - R$<?php echo $offers[2]['price'];?> </p>
         <p><?php echo $offers[3]['poduct'];?> - R$<?php echo $offers[3]['price'];?> </p>
     </section>
+    <?php include 'includes/footer.php';?>
 
 </body>
 </html>

@@ -1,14 +1,5 @@
-<?php
-$prefix='Obrigada';
-$name='Ângela';
-$message=$prefix . ', ' . $name;
-//$message="$prefix $name";
-
-
-
-?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +8,14 @@ $message=$prefix . ', ' . $name;
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <?php require 'includes/header.php';?>
-    <section class="hero" id="hero">
+    <header>
         <h1>The Candy Store</h1>
-        <h2>Pedido <?=$name?></h2>
-        <p><?=$message?></p>
-        
-    </section>
-    <?php include 'includes/footer.php';?>
-    
+        <nav>
+            <a href="index.php">Home</a>
+            <a href="candy.php">Candy</a>
+            <a href="about.php">Sobre</a>
+            <a href="contact.php">Contato</a>
+        </nav>
+    </header>
 </body>
 </html>

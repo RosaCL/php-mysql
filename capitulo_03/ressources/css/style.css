@@ -52,8 +52,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
-    background: #ffffffe7;
+    z-index: 1000;    
     box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .1);
     background: #FFE4E9;
 }
@@ -61,10 +60,13 @@ header h1{
     font-family: "Emilys Candy", serif;    
 }
 header nav a{
-    font-size: 2rem; 
+    font-size: 1.6rem; 
     text-align: center;   
-    color: #252022;
+    color: #166A91;
     padding: 0 1.5rem;    
+}
+header nav a:hover{
+    opacity: .8;
 }
 footer {
     box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .1);    
