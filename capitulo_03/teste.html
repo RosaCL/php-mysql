@@ -15,6 +15,23 @@
     <article>
         <h2>Bem-vindo a Candy Shop</h2>
     </article>
+    <table>
+            <tr>
+                <th>Pacote</th>
+                <th>Preço</th>
+            </tr>
+            <?php foreach($total as $quantity =>$price) {?>
+            <tr>
+                <td>
+                    <?=$quantity?>
+                    Pacote <?=($quantity===1) ? '' :'s';?>
+                </td>
+                <td>
+                    R$ <?=$price?>
+                </td>
+            </tr>
+            <?php }?>
+        </table>
 
 </section>
 <footer>
