@@ -8,6 +8,9 @@
     outline: none;
     list-style: none;
 }
+body{
+    background: #FFFAC0;
+}
 .hero{
     min-height: 100vh;
     width: 100%;
@@ -35,14 +38,15 @@
     width: fit-content;
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid #DFECF2;
-    background: #FFFAC0;
+    border: 1px solid #056896;
+    background: #DFECF2;
 }
 .hero table tr td{    
     width: fit-content;
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid #DFECF2;
+    border: 1px solid #056896;
+    background: #DFECF2;
 }
 header{
     top: 0;
