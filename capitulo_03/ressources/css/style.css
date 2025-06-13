@@ -8,24 +8,17 @@
     outline: none;
     list-style: none;
 }
-body{
-    font-family: "Nunito Sans", sans-serif;
-    color: #252022;
-
+.hero{
+    min-height: 100vh;
+    width: 100%;
 }
-section{
-    padding: 2rem 9%;
-}
-
 .hero h1{
     font-family: "Emilys Candy", serif;
-    font-size: 4rem;
-    color: #500e50de;
+    font-size: 4rem;    
 }
 .hero article h2{
     font-family: "Emilys Candy", serif;
-    font-size: 4rem;
-    color: #500e50de;
+    font-size: 4rem;    
 }
 .hero p{
     font-size: 2rem;
@@ -43,14 +36,14 @@ section{
     width: fit-content;
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid #500e50de;
-    background: #6107616b;
+    border: 1px solid #DFECF2;
+    background: #FFFAC0;
 }
 .hero table tr td{    
     width: fit-content;
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid #500e50de;
+    border: 1px solid #DFECF2;
 }
 header{
     top: 0;
@@ -63,6 +56,7 @@ header{
     z-index: 1000;
     background: #ffffffe7;
     box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .1);
+    background: #FFE4E9;
 }
 header h1{
     font-family: "Emilys Candy", serif;    
@@ -74,5 +68,7 @@ header nav a{
     padding: 0 1.5rem;    
 }
 footer {
-    box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .1);
+    box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .1);    
+    text-align: center;
+    background: #FFE4E9;
 }
