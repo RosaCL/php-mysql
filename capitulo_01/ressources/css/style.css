@@ -8,26 +8,66 @@
     outline: none;
     list-style: none;
 }
-body{
-    font-family: "Nunito Sans", sans-serif;
-    background: #180118de;
-    color: #fff;
-}
-section{
-    padding: 2rem 9%;
-}
 .hero{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(#180118de, #500e50de), url(../img/hero.png);
-    background-position: center;    
-    background-size: cover;
-    position: relative;    
 }
 .hero h1{
     font-family: "Emilys Candy", serif;
-    font-size: 4rem;
+    font-size: 4rem;    
+}
+.hero article h2{
+    font-family: "Emilys Candy", serif;
+    font-size: 4rem;    
 }
 .hero p{
     font-size: 2rem;
+}
+.hero table {
+    margin: 1rem 0;
+    padding: 1.4rem;
+    border-radius: .5rem;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+.hero table tr th{    
+    width: fit-content;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #DFECF2;
+    background: #FFFAC0;
+}
+.hero table tr td{    
+    width: fit-content;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #DFECF2;
+}
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background: #ffffffe7;
+    box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .1);
+    background: #FFE4E9;
+}
+header h1{
+    font-family: "Emilys Candy", serif;    
+}
+header nav a{
+    font-size: 2rem; 
+    text-align: center;   
+    color: #252022;
+    padding: 0 1.5rem;    
+}
+footer {
+    box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .1);    
+    text-align: center;
+    background: #FFE4E9;
 }
