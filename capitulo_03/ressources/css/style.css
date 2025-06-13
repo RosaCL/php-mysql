@@ -10,23 +10,22 @@
 }
 body{
     font-family: "Nunito Sans", sans-serif;
-    background: #180118de;
-    color: #fff;
+    color: #252022;
+
 }
 section{
     padding: 2rem 9%;
 }
-.hero{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(#180118de, #500e50de), url(../img/hero.png);
-    background-position: center;    
-    background-size: cover;
-    position: relative;    
-}
+
 .hero h1{
     font-family: "Emilys Candy", serif;
     font-size: 4rem;
+    color: #500e50de;
+}
+.hero article h2{
+    font-family: "Emilys Candy", serif;
+    font-size: 4rem;
+    color: #500e50de;
 }
 .hero p{
     font-size: 2rem;
@@ -62,15 +61,16 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    background: #500e50de;
+    background: #ffffffe7;
+    box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 header h1{
-    font-family: "Emilys Candy", serif;
+    font-family: "Emilys Candy", serif;    
 }
 header nav a{
     font-size: 2rem; 
     text-align: center;   
-    color: #fff;
+    color: #252022;
     padding: 0 1.5rem;
     background: #500e50de;
 }
