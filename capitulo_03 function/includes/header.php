@@ -10,7 +10,7 @@
 <body>
     <header>
         <img src="./ressources/img/candylogo.png" alt="">
-        <h1>The Candy Store</h1>
+        
         <nav>
             <a href="index.php">Home</a>
             <a href="candy.php">Candy</a>
