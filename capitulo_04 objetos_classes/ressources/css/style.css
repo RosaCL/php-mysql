@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --title: "Lora", serif;
+    --cor1:#1adbfa;
+    --cor2:#04f7b5;
+    --black: #000000;
+    --white: #ffffff;
+    --branco:#eee;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;;
+}
+
+html{
+    font-size: 62,5%
+}
