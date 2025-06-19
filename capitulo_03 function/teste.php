@@ -17,7 +17,20 @@
 
     <?php require 'includes/header.php'; ?>
     <section class="hero">
-
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Estoque</th>
+                <th>Reestocar</th>
+                <th>Valor total</th>
+                <th>Imposto</th>
+            </tr>
+            <tr>
+                <td>Caramelo</td>
+                <td>Bala de hortelã</td>
+                <td>Doce de leite</td>
+            </tr>
+        </table>
 
 
     </section>
