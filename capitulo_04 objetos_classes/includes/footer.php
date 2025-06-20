@@ -7,17 +7,6 @@
     <link rel="stylesheet" href="./ressources/css/style.css">
 </head>
 <body>
-    <header>
-        <img src="./ressources/img/Popozudafund.png" alt="">
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#conta">Sua conta</a>
-            <a href="#cadatro">Cadastro</a>
-        </nav>
-    </header>
-    <section>
-        
-    </section>
 
     <footer>
         <a href="https://github.com/RosaCL" target="_blank"><img src="./ressources/img/costureza.png" alt=""></a>

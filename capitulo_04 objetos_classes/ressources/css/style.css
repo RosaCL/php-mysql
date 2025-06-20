@@ -4,9 +4,12 @@
     --title: "Lora", serif;
     --cor1:#1adbfa;
     --cor2:#04f7b5;
-    --black: #000000;
+    --black: #000000f3;
+    --black-2: #000000ec;
     --white: #ffffff;
     --branco:#eee;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.2);
+    --border: .2rem solid var(--cor1);
 }
 
 
@@ -18,9 +21,65 @@
     border: none;
     list-style: none;
     text-decoration: none;
-    font-family: "Work Sans", sans-serif;;
+    font-family: "Work Sans", sans-serif;
 }
 
 html{
-    font-size: 62,5%
+    font-size: 62,5%;
+    overflow-x: hidden;
+
+}
+body{
+    background: var(--black);
+}
+
+header{
+    background: var(--black-2);
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: var(--box-shadow);
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a{
+    font-size: 1.7rem;
+    font-family: var(--title);
+    color: var(--white);
+    margin-left: 2rem;
+}
+header nav a:hover{
+    color: var(--cor1);
+}
+header nav a.active{
+    color: var(--cor2);
+}
+section{
+    padding: 2rem 9%;
+    width: 100vh;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 1.7rem;
+    background: var(--cor1);
+}
+
+footer{
+    background: var(--black-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 9%;
 }
