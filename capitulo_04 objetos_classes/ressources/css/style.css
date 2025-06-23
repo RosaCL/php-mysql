@@ -103,6 +103,7 @@ table {
     background: var(--branco);
     width: 50rem;
     font-size: 2rem;
+    border-radius: .5rem;
 
 }
 table tr th{
