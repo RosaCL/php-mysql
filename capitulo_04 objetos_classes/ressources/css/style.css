@@ -23,6 +23,9 @@
     text-decoration: none;
     font-family: "Work Sans", sans-serif;
 }
+html, body{
+    height: 100%;
+}
 
 html{
     font-size: 62,5%;
@@ -31,6 +34,9 @@ html{
 }
 body{
     background: var(--black);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header{
@@ -59,8 +65,12 @@ header nav a.active{
     color: var(--cor2);
 }
 section{
+    flex: 1;
     padding: 2rem 9%;
-    width: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn{
     display: inline-block;
@@ -75,6 +85,10 @@ section{
     font-size: 1.7rem;
     background: var(--cor1);
 }
+p{
+    color: var(--white);
+    font-size: 2rem;
+}
 
 footer{
     background: var(--black-2);
@@ -82,4 +96,20 @@ footer{
     align-items: center;
     justify-content: center;
     padding: 2rem 9%;
+    width: 100%;
+}
+table {
+    box-shadow: var(--box-shadow);
+    background: var(--branco);
+    width: 50rem;
+    font-size: 2rem;
+
+}
+table tr th{
+    background: var(--cor2);
+    color: var(--black-2);
+}
+table tr td{
+    background: var(--cor1);
+    text-align: center;
 }
