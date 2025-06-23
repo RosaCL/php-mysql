@@ -9,7 +9,7 @@
     --white: #ffffff;
     --branco:#eee;
     --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.2);
-    --border: .2rem solid var(--cor1);
+    --border: .1rem solid var(--branco);
 }
 
 
@@ -52,6 +52,9 @@ header{
     justify-content: space-between;
 }
 
+header img{
+    width: 8rem;
+}
 header nav a{
     font-size: 1.7rem;
     font-family: var(--title);
@@ -98,19 +101,22 @@ footer{
 }
 table {
     box-shadow: var(--box-shadow);
-    background: var(--branco);
-    width: 50rem;
-    font-size: 2rem;
-    border-radius: .5rem;
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: .5rem;    
 
 }
 table tr th{
-    background: var(--cor2);
-    color: var(--black-2);
+    color: var(--cor2);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: .5rem;
 }
 table tr td{
-    background: var(--cor1);
-    text-align: center;
+    color: var(--cor1);
+    border: var(--border);
+    border-radius: .5rem;
+    padding:.5rem;
 }
 .box{
     background: var(--branco);
