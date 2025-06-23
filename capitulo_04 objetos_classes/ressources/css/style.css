@@ -85,10 +85,7 @@ section{
     font-size: 1.7rem;
     background: var(--cor1);
 }
-p{
-    color: var(--white);
-    font-size: 2rem;
-}
+
 
 footer{
     background: var(--black-2);
@@ -113,4 +110,14 @@ table tr th{
 table tr td{
     background: var(--cor1);
     text-align: center;
+}
+.box{
+    background: var(--branco);
+    width:100%;
+    margin: .7rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 2rem;
+    color: var(--black);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
 }

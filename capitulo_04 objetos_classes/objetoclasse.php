@@ -35,10 +35,12 @@ $account->balance =1000.00;
     include './includes/header.php'
     ?>
     <section>
-        <p><strong>Nome:</strong> <?=$customer->name?></p>
-        <p><strong>Username:</strong> <?=$customer->username?></p>
-        <p><strong>Email:</strong> <?=$customer->email?></p>
-        <p><strong>Saldo: </strong><?=$account->balance?></p>
+        <div class="box">
+            <p><strong>Nome:</strong> <?=$customer->name?></p>
+            <p><strong>Username:</strong> <?=$customer->username?></p>
+            <p><strong>Email:</strong> <?=$customer->email?></p>
+            <p><strong>Saldo: </strong><?=$account->balance?></p>
+        </div>
     </section>
     <?php
     include './includes/footer.php'
