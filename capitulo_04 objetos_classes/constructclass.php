@@ -27,8 +27,8 @@ class Account{
     }
 
     public function jurosmes(float $amount): float{
-        $this -> saldo*($this->juros/100);
-        $this -> saldo+=$juros;
+        $this -> saldo *($this->juros/100);
+        $this -> saldo += $juros;
         return $this->saldo;
     }
 
