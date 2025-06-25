@@ -3,7 +3,8 @@
     --cor1:#E8B115;
     --cor2:#f3d949c4;
     --letra:#343434;
-    --box-shadow: 0 .2rem .5rem rgba(0,0,0,.2);
+    --white:#fff;
+    --box-shadow: 0 .2rem .5rem var(--cor1);
 }
 *{
     margin: 0;
@@ -23,6 +24,9 @@ body{
 }
 section{
     padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1;
     min-height: 100vh;
 }
@@ -46,6 +50,18 @@ header nav a {
 header img{
     width: 10rem;
     
+}
+.box{
+    background: #343434;
+    font-size: 2rem;
+    color:var(--white);
+    padding: 1rem 4%;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+    flex-direction: column;
+}
+b{
+    color: var(--cor1);
 }
 footer{
     padding: 2rem 9%;

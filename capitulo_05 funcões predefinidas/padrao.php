@@ -11,6 +11,9 @@
 <body>
     <?php include './includes/header.php' ?>
     <section>
+        <div class="box">
+            
+        </div>
 
     </section>
     <?php include './includes/footer.php'?>
