@@ -15,13 +15,13 @@ $text = 'PHP e MySQL';
         <div class="box">
             <p>
                     <b>Mínuscula:</b>
-                    <?=strtolower($text)?>
+                    <?=strtolower($text)?><br>
                     <b>Maíuscula:</b>
-                    <?=strtoupper($text)?>
+                    <?=strtoupper($text)?><br>
                     <b>Primeiras letra de cada palavara maíuscula:</b>
-                    <?=ucwords($text)?>
+                    <?=ucwords($text)?><br>
                     <b>Número de letras:</b>
-                    <?=strlen($text)?>
+                    <?=strlen($text)?><br>
                     <b>Número de palavras:</b>
                     <?=str_word_count($text)?>
             </p>
