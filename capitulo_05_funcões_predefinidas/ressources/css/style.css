@@ -28,7 +28,7 @@ section{
     align-items: center;
     justify-content: center;
     flex: 1;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 header{
     top: 0;
