@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+:root{
+    --cor1:#E8B115;
+    --cor2:#f3d949c4;
+    --letra:#343434;
+    --white:#fff;
+    --box-shadow: 0 .2rem .5rem var(--cor1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Shadows Into Light Two", cursive;
+    background: var(--cor2);
+
+}
+section{
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 100vh;
+}
+header{
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cor1);
+    width: 100%;
+}
+header nav a {
+    font-size: 1.8rem;
+    margin-left: 1.5rem;
+    color: var(--letra);
+}
+header img{
+    width: 10rem;
+    
+}
+.box{
+    background: #343434;
+    font-size: 2rem;
+    color:var(--white);
+    padding: 1rem 4%;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+    flex-direction: column;
+}
+b{
+    color: var(--cor1);
+}
+footer{
+    padding: 2rem 9%;
+    width: 100%;
+    background: var(--cor1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: #E8B115;
+}
