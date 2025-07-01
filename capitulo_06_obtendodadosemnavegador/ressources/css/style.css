@@ -13,6 +13,7 @@
     outline: none;
     list-style: none;
     box-sizing: border-box;
+    border: none;
 }
 html{
     font-size: 62.5%;
@@ -57,7 +58,7 @@ header img{
     color:var(--white);
     padding: 1rem 4%;
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);    
+    box-shadow: var(--box-shadow); 
     flex-direction: column;
 }
 b{
@@ -73,4 +74,60 @@ footer{
 }
 a{
     color: #E8B115;
+}
+
+.formcontainer{
+    display: flex; 
+    width: 100%;
+}
+.formcontainer form{
+    width: 50rem;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 2rem;
+}
+form input{
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+}
+form select,form textarea{
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+}
+.avalia{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.avalia p{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+form p:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+form p:has(input[type="checkbox"]) input[type="checkbox"] {
+    width: auto;
+    margin: 0; 
+}
+
+.btn{
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem;
+    background: var(--cor1);
+    font-size: 1.6rem;
+    color: var(--letra);
+    font-weight: bold;
+}
+.btn:hover{
+    background: var(--cor2);
 }
