@@ -58,7 +58,7 @@ header img{
     color:var(--white);
     padding: 1rem 4%;
     border-radius: .5rem;
-    box-shadow: var(--box-shadow); 
+    box-shadow: var(--box-shadow);    
     flex-direction: column;
 }
 b{
