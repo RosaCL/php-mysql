@@ -20,10 +20,10 @@
 <body>
     <?php include './includes/header.php' ?>
     <section>
-        <div class="box-nc">
+        <div class="box">
             <?=$message;?>
             <form action="" method="post">
-                Eu concordo com os termos e condições: <input type="checkbox" name="therms" value="true" <?=$therms ? 'checked': ''?>>
+                <p>Eu concordo com os termos e condições: <input type="checkbox" name="therms" value="true" <?=$therms ? 'checked': ''?>></p>
                 <input class="btn" type="submit" value="Enviar">
             </form>
         </div>

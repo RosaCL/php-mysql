@@ -24,9 +24,11 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
         <div class="box">
             <?=$message;?>
             <form action="" method="post">
-                <?php foreach($star_rating as $option){?>
-                    <?=$option;?><input type="radio" name="stars" value="<?=$option;?>"<?=($stars==$option) ? 'checked': ''?>>                    
-                <?php }?>
+                <div class="rating-options"> <?php foreach($star_rating as $option){?>
+                        <label> <?=$option;?> <input type="radio" name="stars" value="<?=$option;?>"<?=($stars==$option) ? 'checked': ''?>>
+                        </label>
+                    <?php }?>
+                </div>
                 <input type="submit" value="Enviar" class="btn">
             </form>
         </div>
