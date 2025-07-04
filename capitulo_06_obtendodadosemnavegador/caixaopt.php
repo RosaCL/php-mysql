@@ -1,11 +1,11 @@
 <?php
-    $therms ='';
+    $terms ='';
     $message = '';
 
 
     if($_SERVER['REQUEST_METHOD']=='POST'){
-        $therms = (isset($_POST['therms']) && $_POST['therms'] == 'true') ? true : false;
-        $message = $therms ? 'Obrigada!' : 'Você concordou com os termos e condições';
+        $terms = (isset($_POST['therms']) && $_POST['terms'] == 'true') ? true : false;
+        $message = $terms ? 'Obrigada!' : 'Você concordou com os termos e condições';
     }
 
 ?>
@@ -23,7 +23,7 @@
         <div class="box">
             <?=$message;?>
             <form action="" method="post">
-                <p>Eu concordo com os termos e condições: <input type="checkbox" name="therms" value="true" <?=$therms ? 'checked': ''?>></p>
+                <p>Eu concordo com os termos e condições: <input type="checkbox" name="terms" value="true" <?=$terms ? 'checked': ''?>></p>
                 <input class="btn" type="submit" value="Enviar">
             </form>
         </div>

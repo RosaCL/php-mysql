@@ -181,3 +181,7 @@ form p:has(input[type="checkbox"]) input[type="checkbox"] {
 .btn:hover{
     background: var(--cor2);
 }
+span {
+    color: red;
+    font-size: 2.5rem;
+}
