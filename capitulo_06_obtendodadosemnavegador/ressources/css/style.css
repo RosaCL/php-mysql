@@ -182,6 +182,6 @@ form p:has(input[type="checkbox"]) input[type="checkbox"] {
     background: var(--cor2);
 }
 span {
-    color: red;
+    color: #FB98A5;
     font-size: 2.5rem;
 }

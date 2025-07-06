@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
                     <span><?=$error['age']?></span>
                     <p><input type="checkbox" name="terms" value="true"<?=$user['terms'] ? 'checked' : '' ?>>Eu concordo com ostermos e condições.</p>
                     <span><?=$error['terms']?></span>
-                    <input type="submit" value="Salvar">
+                    <input type="submit" value="Salvar" class="btn">
 
                 </form>
             </div>
