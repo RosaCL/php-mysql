@@ -188,7 +188,7 @@ span {
 .img {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: .8rem;
     object-fit: cover;
     display: block;
     margin: 10px auto;
