@@ -1,11 +1,56 @@
 <?php
+function resize_image_gd($orig_path, $new_path, $max_width, $max_height){
+    $image_data = getimagesize($orig_path);
+    $orig_width = $image_data[0];
+    $orig_height = $image_data[1];
+    $media_type = $image_data['mime'];
+    $new_width = $max_width;
+    $new_height = $max_height;
+    $orig_ratio = $orig_width/$orig_height;
+
+    if($orig_width>$orig_height){
+        $new_height = intval($new_width/$orig_ratio);
+    }else{
+        $new_width = intval($new_height * $orig_ratio);
+    }
+
+    switch($media_type){
+        case 'image/gif':
+            $orig = imagecreatefromgif($orig_path);
+            break;
+        case 'image/jpeg':
+            $orig = imagecreatefromjpeg($orig_path);
+            break;
+        case 'image/png':
+            $orig = imagecreatefrompng($orig_path);
+            break;
+    }
+
+    $new = imagecreatetruecolor($new_width, $new_height);
+
+    imagecopyresampled($new, $orig, 0, 0, 0, 0, $new_width, $new_height, $orig_width, $orig_height);
+
+    switch($media_type){
+        case 'image/gif':
+            $result = imagegif($new, $new_path);
+            break;
+        case 'image/jpeg':
+            $result = imagejpeg($new, $new_path);
+            break;
+        case 'image/png':
+            $result = imagepng($new, $new_path);
+            break;
+    }
+    return $result;
+
+}
 $moved = false; 
 $message = '';
 $error = '';
 $upload_path = 'uploads/';
 $max_size = 5242880; // 5MB
-$allowed_types = ['image/jpg', 'image/png', 'image/jpeg', 'image/gif',];
-$allowed_exts = ['jpg', 'png', 'jpeg', 'gif',];
+$allowed_types = [ 'image/png', 'image/jpeg', 'image/gif',];
+$allowed_exts = [ 'png', 'jpeg', 'gif',];
 
 function create_filename($filename, $upload_path) {
     $basename = pathinfo($filename, PATHINFO_FILENAME);
@@ -47,6 +92,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $filename = create_filename($_FILES['image']['name'], $upload_path);
             $destination = $upload_path . $filename;
             $moved = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
+            $thumbpath = $upload_path. 'thumb_' . $filename;
+            $resized = resize_image_gd($destination, $thumbpath, 200, 200);
         }
     }
 
@@ -74,7 +121,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <?= $message ?>
             <form action="" method="post" enctype="multipart/form-data">
                 <label for="image"><b>Envie sua imagem:</b></label>
-                <input type="file" name="image" accept="image/jpg, image/png, image/jpeg, image/gif">
+                <input type="file" name="image" accept="image/png, image/jpeg, image/gif">
                 <input type="submit" value="Enviar" class="btn">
                 
             </form>
